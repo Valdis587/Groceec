@@ -1,0 +1,19 @@
+.pageerror {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    row-gap: 50px;
+    padding: 100px 0;
+    &__title {
+        @include funcAdaptiv(font-size, 20, 90);
+        font-style: italic;
+        color: $ColorHead;
+    }
+    &__desc {
+        font-size: 30px;
+    }
+    &__button {
+        width: 200px;
+        margin: 0 auto;
+    }
+}

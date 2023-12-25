@@ -1,0 +1,130 @@
+.footer {
+   position: relative;
+   margin: 20px 0 0 0;
+   border-top: 3px solid $HeadColor;
+   &__content {   
+      background-color: $ColorFooter;
+      color: $ColorTextFooter;
+   }
+   &__logo {
+      margin: 0 auto;
+      color: $ColorFooter;
+   }
+   &__text {
+      text-align: center;
+   }
+   &__menu-box {
+      padding: 60px 0;
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+      flex-wrap: wrap;
+   }
+   &__contact {
+      @media(max-width: 640px) {
+         width: 100%;
+         margin: 0 auto;
+      }
+      max-width: 400px;
+      flex: 1 1 400px;
+      display: flex;
+      flex-direction: column;
+      row-gap: 10px;
+      padding: 0 10px;
+   }
+   &__icon-list {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      column-gap: 20px;
+     
+      li a i{
+         width: 20px;
+         height: 20px;
+         font-size: 18px;
+         background-color: $ColorLink;
+         padding: 10px;
+         border-radius: 100%;
+         color: $ColorButtonText;
+         transition: all 0.6s ease 0.3s;
+      }
+      li a i:hover {
+         background-color: $ColorLinkHover;
+      }
+   }
+   &__menu-item {
+      max-width: 310px;
+      flex: 0 0 310px;
+      padding: 0 10px;
+      @media(max-width: 640px) {
+         width: 100%;
+         margin: 0 auto;
+      }
+   }
+   &__menu-title {
+      font-size: 23px;
+      margin: 20px 0;
+      text-align: center;
+   }
+   &__menu-list {
+      display: flex;
+      flex-direction: column;
+      row-gap: 10px;
+      text-align: center;
+      li a {
+         transition: all 0.6s ease 0.3s;
+      }
+      li a:hover {
+         color: $ColorLinkHover;
+      }
+   }
+   &__copy {
+      text-align: center;
+      color: #fff;
+     padding: 20px 0;
+     background-color: black;
+   }
+   &__back {
+      position: absolute;
+      bottom: 80px;
+      right: 80px;
+      transform: rotate(180deg);
+      cursor: pointer;
+      position: fixed;
+      i {
+        padding: 10px;
+         background-color: $ColorButton;
+         color: $ColorButtonText;
+         font-size: 30px;
+         border-radius: 10px;
+         transition: all 0.6s ease 0.3s;
+      }
+      i:hover {
+         background-color: $ColorButtonHover;
+      }
+   }
+   .hidden-top {
+      display: none;
+   }
+   &__bottom-right, &__bottom-left {
+    margin: 0 auto;
+    padding: 5px;
+   }
+   &__bottom {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      gap: 20px;
+      padding: 0 0 30px 0;
+      flex-wrap: wrap;
+   }
+   &__pay-list {
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+      li img {
+         width: 45px;
+         height: 28px;
+      }
+   }
+}

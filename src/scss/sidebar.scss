@@ -1,0 +1,230 @@
+.sidebar {
+    .widget_recent_entries ul, .widget_recent_comments ul, .widget_archive ul, .widget_categories ul {
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        row-gap: 20px;
+        a {
+            transition: all 0.6s ease 0.3s;
+        }
+        a:hover {
+            color: $ColorLinkHover;
+        }
+    }
+    .tagcloud {
+        padding: 10px;
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        a {
+            padding: 5px 8px;
+            background-color: $ColorButton;
+            color: $ColorButtonText;
+            border-radius: 3px;
+            transition: all 0.6s ease 0.3s;
+        }
+        a:hover {
+            background-color: $ColorButtonHover;
+        }
+    }
+   &__wiget-body {
+    padding: 10px;
+    
+   }
+   &__reviews {
+    padding: 10px;
+   }
+    &__reviews-item {
+        border: 1px solid #ddd;
+        border-radius: 3px;
+       display: flex;
+       flex-direction: column;
+       row-gap: 10px;
+       padding: 5px;
+       text-align: center;
+       margin: 0 5px;
+    }
+    &__reviews-img {
+        width: 100px;
+        margin: 0 auto;
+        border: 2px solid $HeadColor;
+        border-radius: 100%;
+        img {
+            width: 100px;
+            height: 100px;
+            border-radius: 100%;
+        }
+    }
+    &__reviews-neme {
+        font-size: 18px;
+    }
+    &__reviews-rewievs  {
+        flex: 1 1 auto;
+        font-style: italic;
+        background-color: rgb(167, 167, 167);
+        padding: 5px;
+        border-radius: 3px;
+    }
+    .owl-stage {
+        display: flex;
+        min-height: 100%;
+       
+    }
+    &__blog {
+        max-width: 400px;
+        flex: 0 0 400px;
+        margin: 0 auto;
+    }
+    &__widget {
+        box-shadow: 0 5px 30px rgba(0, 0, 0, 0.1);
+        border-radius: 3px;
+        margin: 0 0 10px 0;
+    }
+    &__widget-title {
+        font-size: 22px;
+        font-weight: 600;
+        padding: 20px 5px 10px 5px;
+        border-bottom: 1px solid #e6e6e6
+    }
+    &__widget-body {
+        padding: 10px;
+    }
+    &__widget-news-list {
+        display: flex;
+        flex-direction: column;
+        row-gap: 10px;
+    }
+    &__widget-news-item {
+        display: flex;
+        column-gap: 5px;
+    }
+    &__widget-news-left {
+        img {
+            width: 80px;
+            height: 50px;
+            border-radius: 3px;
+            transition: all 0.6s ease 0.3s;
+        }
+        img:hover{
+            border: 1px solid $ColorButtonHover;
+        }
+    }
+    &__widget-news-right {
+        display: flex;
+        flex-direction: column;
+        row-gap: 10px;
+        i {
+            color: $ColorButton;
+        }
+        span {
+            font-size: 14px;
+        }
+    }
+    &__widget-news-title {
+        font-size: 18px;
+        line-height: 18px;
+        transition: all 0.6s ease 0.3s;
+    }
+    &__widget-news-title:hover {
+        color: $ColorButtonHover;
+    }
+    &__widget-search-wrapper {
+        padding: 20px 10px;
+    }
+    &__widget-search {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &__widget-search-input {
+        border: 1px solid rgb(204, 204, 204);
+        padding: 0 0 0 10px;
+        height: 40px;
+        width: 100%;
+        border-radius: 3px 0 0 3px;
+    }
+    &__widget-search-button {
+        background-color: $ColorButton;
+        color: $ColorButtonText;
+        height: 40px;
+        width: 40px;
+        border-radius: 0 3px 3px 0;
+        transition: all 0.6s ease 0.3s;
+    }
+    &__widget-search-button:hover {
+        background-color: $ColorButtonHover;
+    }
+    &__widget-category-body {
+        padding: 10px;
+    }
+    &__widget-category-list {
+        display: flex;
+        flex-direction: column;
+        row-gap: 20px;
+    }
+    &__widget-category-link-wrapper{
+        display: flex;
+        align-items: center;
+        column-gap: 5px;
+        border: 1px solid rgb(204, 204, 204);
+        border-radius: 3px;
+    }
+    &__widget-category-img {
+        img {
+            height: 40px;
+            width: 40px;
+            border-radius: 3px;
+            transition: all 0.6s ease 0.3s;
+        }
+        img:hover {
+            border: 1px solid $ColorButtonHover;
+        }
+    }
+    &__widget-category-link {
+        padding: 12px 5px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        i {
+            font-size: 18px;
+            opacity: 0.7;
+            padding: 0 5px 0 0;
+        }
+    }
+    &__widget-sub-category-list {
+        display: none;
+        margin: 20px 0 0 0;
+       
+    }
+    .widget-open-sub-category {
+        display: block;
+        display: flex;
+        flex-direction: column;
+        row-gap: 20px;
+    }
+    &__widget-reviews-item {
+        display: flex;
+        flex-direction: column;
+        row-gap: 10px;
+        text-align: center;
+    }
+    &__widget-reviews-img {
+        text-align: center;
+        width: 80px;
+        height: 80px;
+        margin: 0  auto;
+        img {      
+            border-radius: 100%;
+            border: 2px solid $ColorButton;
+        }
+    }
+    &__widget-reviews-content {
+        display: flex;
+        flex-direction: column;
+        row-gap: 10px;
+    }
+    &__widget-reviews-name {
+        font-size: 20px;
+    }
+}
